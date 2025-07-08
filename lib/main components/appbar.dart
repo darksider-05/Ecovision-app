@@ -25,5 +25,5 @@ class Apbr extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => new Size.fromHeight(kToolbarHeight - 15);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight - 15);
 }

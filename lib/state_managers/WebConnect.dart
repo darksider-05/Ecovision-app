@@ -236,8 +236,6 @@ class NewsModel extends ChangeNotifier {
 
         if (data is List) {
           _curData = List<Map<String, dynamic>>.from(data);
-          print("currency got heeeeeeeeeeeeeeeeeere");
-          print(curData);
           notifyListeners(); // Notify UI to rebuild
         } else {
           throw Exception("Expected a list of maps, got something else.");
