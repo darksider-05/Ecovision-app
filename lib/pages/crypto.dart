@@ -49,7 +49,7 @@ class CryPage extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(0, 4, 0, 4),
                   child: Column(
                     children: [
-                      NewsBox(listData: newModel.curData[index]),
+                      CripBox(listData: newModel.curData[index]),
                     ], //////////////////////////////////////////
                   ),
                 );
@@ -63,9 +63,9 @@ class CryPage extends StatelessWidget {
 }
 
 
-class NewsBox extends StatelessWidget {
+class CripBox extends StatelessWidget {
   final Map<String, dynamic> listData;
-  const NewsBox({super.key, required this.listData});
+  const CripBox({super.key, required this.listData});
 
   @override
   Widget build(BuildContext context) {
