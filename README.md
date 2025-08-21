@@ -2,9 +2,9 @@
 ## this is the android user client version of the [EcoVision app](https://github.com/alirezaArz/Ecovision).
 connect to the server and get all the news you need!
 <div style="display:flex;">
-<img src='https://github.com/user-attachments/assets/25b2edb3-165c-4949-be95-0ffe4ba15102' style="width:30vw">
+<img src='https://github.com/user-attachments/assets/25b2edb3-165c-4949-be95-0ffe4ba15102' style="width:20vw">
 <span>-----</span>
-<img src="https://github.com/user-attachments/assets/8c5fea62-0ed8-4825-86d4-988e7d6df97e" style="width:30vw">
+<img src="https://github.com/user-attachments/assets/8c5fea62-0ed8-4825-86d4-988e7d6df97e" style="width:20vw">
 </div>
 <div></div>
 
