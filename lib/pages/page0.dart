@@ -7,6 +7,8 @@ class PageZero extends StatelessWidget {
   PageZero({super.key});
 
   final TextEditingController _extracted = TextEditingController();
+  bool isnottapped1 = true;
+  bool isnottapped2 = true;
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +50,10 @@ class PageZero extends StatelessWidget {
           ),
           SizedBox(height: 10),
           ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Color(0xff30363d)),
+            style: ElevatedButton.styleFrom(backgroundColor: isnottapped1 ? Color(0xff30363d): Colors.white70),
             onPressed: () async {
               FocusScope.of(context).unfocus();
+              isnottapped1 = false;
               await Future.wait([
                 newModel.fetchNewsAll(_extracted.text),
                 newModel.fetchNewsEco(_extracted.text),
@@ -65,14 +68,15 @@ class PageZero extends StatelessWidget {
             },
             child: Text(
               "accept",
-              style: TextStyle(fontSize: 15, color: Colors.white70),
+              style: TextStyle(fontSize: 15, color: isnottapped1 ? Colors.white70: Color(0xff30363d)),
             ),
           ),
           SizedBox(height: MediaQuery.of(context).size.height * 1 / 100),
           ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Color(0xff30363d)),
+            style: ElevatedButton.styleFrom(backgroundColor: isnottapped2 ? Color(0xff30363d): Colors.orange[700]),
             onPressed: () async {
               FocusScope.of(context).unfocus();
+              isnottapped2 = false;
               await Future.wait([
                 newModel.fetchNewsAll("192.168.99.240"),
                 newModel.fetchNewsEco("192.168.99.240"),
@@ -87,7 +91,7 @@ class PageZero extends StatelessWidget {
             },
             child: Text(
               "Dev",
-              style: TextStyle(fontSize: 15, color: Colors.orange[700]),
+              style: TextStyle(fontSize: 15, color: isnottapped2 ? Colors.orange[700]: Colors.white),
             ),
           ),
         ],

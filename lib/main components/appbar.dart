@@ -11,7 +11,7 @@ class Apbr extends StatelessWidget implements PreferredSizeWidget {
 
     return AppBar(
       iconTheme: IconThemeData(color: Colors.white),
-      title: Text("VGAnalyzer", style: TextStyle(color: Colors.white),),
+      title: Text("EcoVision", style: TextStyle(color: Colors.white),),
       backgroundColor: Color(0xff14252F),
       actions: [
         IconButton(
