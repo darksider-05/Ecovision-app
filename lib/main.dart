@@ -16,7 +16,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => NavigationModel()),
         ChangeNotifierProvider(create: (_) => NewsModel()),
       ],
-      child: MaterialApp(debugShowCheckedModeBanner: true, home: MainPart()),
+      child: MaterialApp(debugShowCheckedModeBanner: false, home: MainPart()),
     ),
   );
 }
@@ -35,7 +35,7 @@ class MainPart extends StatelessWidget {
       body: IndexedStack(
         index: navModel.currentIndex,
         children: [
-          (navModel.currentIndex == 0)?PageZero(): Container(),
+          (navModel.currentIndex == 0) ? PageZero() : Container(),
           GlobalPage(pageTitle: "all news", pageVar: "allNews"),
           GlobalPage(pageTitle: "Economy", pageVar: "ecoNews"),
           GlobalPage(pageTitle: "Finance", pageVar: "finNews"),

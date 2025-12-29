@@ -7,11 +7,12 @@ class PageZero extends StatelessWidget {
   PageZero({super.key});
 
   final TextEditingController _extracted = TextEditingController();
-  bool isnottapped1 = true;
-  bool isnottapped2 = true;
 
   @override
   Widget build(BuildContext context) {
+
+    bool isnottapped1 = true;
+    bool isnottapped2 = true;
     final newModel = context.watch<NewsModel>();
     return Container(
       color: Color(0xff21262D),
