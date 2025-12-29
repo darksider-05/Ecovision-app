@@ -1,5 +1,5 @@
 # EcoVision apk
-## this is the android user client version of the [EcoVision app](https://github.com/alirezaArz/Ecovision).
+## this is the android user client version of the [EcoVision app](https://github.com/darksider-05/Ecovision).
 connect to the server and get all the news you need!
 <div style="display:flex;">
 <img src='https://github.com/user-attachments/assets/25b2edb3-165c-4949-be95-0ffe4ba15102' style="width:20vw">
